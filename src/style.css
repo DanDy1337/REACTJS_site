@@ -1,0 +1,715 @@
+body {
+  width: 95%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 1%; */
+  /* padding-right: 1%; */
+  overflow-x: hidden;
+}
+
+li {
+  list-style-type: none;
+}
+
+.BodyStyle1{
+  display: flex;
+  border-radius: 1rem;
+  margin-top: 20px;
+  width: 90%;
+  height: 400px;
+  background-color: rgb(255, 251, 251);
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Head{
+  display: inline-block;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.HeadBlur{
+  filter: blur(5px);
+  display: inline-block;
+  margin-top: 5px;
+  width: 90%;
+  animation-duration: 1s;
+  animation-name: blur;
+}
+
+@keyframes blur{
+  from{
+    filter: blur(0px);
+  }
+  to{
+    filter: blur(5px);
+  }
+}
+
+.korz{
+  /* margin-left: 100%; */
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+  margin-right: 2%;
+}
+
+.form1{
+  margin-left: 5%;
+  display: inline-block;
+  width: 35%;
+  margin-right: 34%;
+}
+
+.logo{
+  border-radius:100% ;
+  height: 40px; 
+  width: 40px;
+}
+
+.inputSear{
+  margin-left: 5px;
+  height: 32px;
+  width: 32px;
+  margin-bottom: 5px;
+}
+
+.input{
+  padding-left: 4px;
+  border-radius: 1rem;
+  width: 80%; 
+  height: 45px;
+  border: none;
+  outline: none;
+}
+
+.telef{
+  width: 32px;
+  height: 32px;
+  margin-bottom: 5px;
+  margin-right: 2%;
+  display: inline-block;
+}
+
+.gamb{
+  margin-top: 7px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  visibility: hidden;
+}
+
+.butt{
+  margin-top: 5px;
+  width: 10%;
+  float: right;
+}
+
+.gambMenu{
+  filter: none;
+  display: flex-box;
+  position: absolute;
+  left: 70%;
+  bottom: 42.5%;
+  width: 30%;
+  height: 57.5%;
+  background-color: cornsilk;
+  /* display: block; */
+  animation-duration: 1s;
+  animation-name: gambMenu;
+  flex-direction: column;
+  
+}
+
+.inviz{
+  visibility: hidden;
+  position: absolute;
+}
+
+.B1Title{
+  width: 30%;
+  height: 20%;
+  border-bottom: medium dashed black;
+}
+.B1Title > span:first-child{
+  margin-left: 10px;
+  font-size: 100%;
+  font-size: 45px;
+}
+
+.zvezda {
+  margin-right: 2% ;
+  margin-top: 1% ;
+  float: right;
+  width: 20px;
+  height: 20px;
+}
+
+.horse1{
+  /* margin-left: auto; */
+  margin-left: 17%;
+  border-radius: 1rem;
+  height: 40%;
+  width: 50%;
+  display: inline-flex;
+}
+
+
+.B1Menu {
+  /* display: flex; */
+  overflow-x: hidden;
+  white-space: nowrap;
+
+}
+
+.Card1{
+  display: inline-flex;
+  white-space: normal;
+  margin-left: 20px;
+  margin-right: 75px;
+  height: 300px;
+  width: 23%;
+  border-radius: 1rem;
+  border: medium solid black ;
+  flex-direction: column;
+}
+.Card1M{
+  display: inline-flex;
+  white-space: normal;
+  margin-left: 20px;
+  /* margin-right: 75px; */
+  height: 300px;
+  width: 87%;
+  border-radius: 1rem;
+  border: medium solid black ;
+  flex-direction: column;
+}
+
+.Card1 > p{
+  height: 30%;
+}
+
+.strela{
+  position: absolute;
+  left: 91%;
+  top: 290px;
+  width: 38px;
+  height: 38px;
+}
+
+.strela:active{
+  width: 42px;
+  height: 42px;
+  background-color: dimgray;
+}
+.strela:hover{
+  cursor: pointer;
+}
+
+.strelaReverse{
+  transform: rotate(180deg);
+  position: absolute;
+  left: 91%;
+  top: 290px;
+  width: 38px;
+  height: 38px;
+  animation-name: Strela;
+  animation-duration: 0,2s;
+}
+.strelaReverse:active{
+  width: 42px;
+  height: 42px;
+  background-color: dimgray;
+}
+.strelaReverse:hover{
+  cursor: pointer;
+}
+
+@keyframes gambMenu {
+  from{
+    font-size: 0%;
+    width: 0%;
+    left: 100%;
+  }
+  to{
+    font-size: 100%;
+    width: 30%;
+    left: 70%;
+  }
+}
+
+.gambMenu > p {
+  margin-left: 4%;
+  margin-bottom: 4%;
+  /* font-size: 100%; */
+}
+
+
+/* .gambMenu > p:first-child{
+  margin-top: 6%;
+} */
+
+.krest{
+  
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  float: right;
+}
+
+.HorseJpg{
+  transform: translate(-100%,600px);
+  transition: all 0.5s ease-out;
+}
+.HorseJpg_active{
+  width: 100%;
+  height:500px;
+  position: relative;
+  transform: translate(0);
+  /* filter: blur(2px); */
+  transition: all 0.5s ease-out;
+  animation-duration: 1s;
+  animation-name: HorseJ;
+}
+@keyframes HorseJ{
+  from{
+    opacity: 0;
+    transform: translate(0,30px);
+    filter: none;
+    right: 5%;
+    top: 20%;
+  }
+  to{
+    opacity: 1;
+    transform: translate(0);
+    right: 0%;
+    top: 20%;
+  }
+}
+
+.B2Div{
+  width: 90%;
+}
+
+.B2Div > p{
+  font-size: 20px;
+  width: 32%;
+  position: relative;
+  position: absolute;
+  top: 935px;
+  right: 0%;
+  text-shadow: 1px 1px 1px white;
+  animation-name: p;
+  animation-duration: 2s;
+  transition: 1.5s;
+}
+@keyframes p{
+  from{
+    opacity: 0;
+    right: -10%;
+  }
+  to{
+    opacity: 1;
+    right: 0%;
+  }
+}
+
+.B2Div > button{
+  position: relative;
+  position: absolute;
+  top: 900px;
+  right: 15%;
+  animation-name: Button;
+  animation-duration: 2s;
+  z-index: 1;
+  transition: 1s;
+}
+@keyframes Button{
+  from{
+    transition: 1s;
+    opacity: 0;
+    top: 870px;
+  }
+  to{
+    transition: 1s;
+    opacity: 1;
+    top: 900px;
+  }
+}
+.B2Div > button:hover{
+  transform: scale(1.7);
+  transition: 1s;
+}
+.B2Div > button:hover~.HorseJpg_active{
+  transition: 2s;
+  filter: blur(6px);
+  transform: scale(0.9px)
+}
+.B2Div > button:hover~.lop{
+  transform: translate(0,-60px);
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.LSTDiv {
+  border-radius: 1rem;
+  padding-left:5px ;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  height: 280px;
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+  margin-top: 230px;
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+.LSTDivImg{
+  display: flex-box;
+  margin-top: 10px;
+}
+.LSTDivImg > img{
+  margin-right: 5px;
+}
+.LSTDivImg > img:nth-child(5){
+  margin-left: 16px;
+}
+
+.LSTDiv > div{
+  display: flex;
+  flex-direction: column;
+  margin-right:15px ;
+}
+.LSTDiv > div:last-child > li{
+  height: 14px;
+}
+
+a { 
+  margin-bottom: 5px;
+  text-decoration: none; /* Убирает подчеркивание для ссылок */
+} 
+
+.LSTDiv > div > li {
+  margin-bottom: 5px;
+}
+
+.LSTDiv > div > p{
+  font-size: 23px;
+  color: gray;
+}
+
+.Mob{
+  /* padding-top: 5px; */
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.logoM{
+  border-radius:100% ;
+  height: 30%; 
+  width: 30%;
+}
+
+.gambM{
+  width: 20%;
+  height: 20%;
+}
+
+.gambMM{
+  list-style-type: none;
+  font-size: 25px;
+  position: absolute;
+  left: 100%;
+  height: 25%;
+  top: 0.001%;
+  width: 40%;
+  background-color: gray;
+  transition: 0.5s;
+}
+
+.gambMM_act{
+  list-style-type: none;
+  position: absolute;
+  font-size: 25px;
+  top: 0.001%;
+  left: 60%;
+  height: 25%;
+  width: 40%;
+  background-color: gray;
+  transition: 0.5s;
+}
+
+.LastBodyMobile{
+  /* padding: 10px; */
+  height: 456.500px;
+  display: none;
+  margin-top: 140px;
+  background-color: white;
+  border-radius: 1rem;
+  margin-bottom: 20px;
+}
+
+.LastBodyMobile > div > p {
+  width: 105px;
+  font-size: 23px;
+  color: gray;
+  padding-left: 5px;
+}
+.LastBodyMobile > div > img{
+  height: 20px;
+  width: 30px;
+  margin-top: 10px;
+}
+.LastBodyMobile > div > img:last-child{
+  margin: 0px 5px 0px 0px;
+}
+.MobM0{
+  height: 23%;
+  transition: 1s;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+}
+.MobM0 > div > a{
+  transition: 1s;
+  display: none;
+  position: relative;
+  z-index: -1;
+}
+.MobM0_act{
+  position: relative;
+  z-index: 1;
+  height: 70%;
+  transition: 1s;
+  display: block;
+}
+.MobM0_act > div > a{
+  display: block;
+  position: relative;
+  z-index: 0;
+}
+.MobM0_act > img {
+  transition: 1s;
+  transform: rotate(180deg);
+}
+
+
+.MobM1{
+  height: 15%;
+  transition: 1s;
+  position: relative;
+  background-color: white;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+}
+.MobM1 > div > a{
+  display: none;
+  position: relative;
+  z-index: 0;
+}
+.MobM1_act{
+  background-color: white;
+  transition: 1s;
+  height: 62%;
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+.MobM1_act > img {
+  transition: 1s;
+  transform: rotate(180deg);
+}
+.MobM1_act > div > a{
+  display: block;
+  position: relative;
+  z-index: -1;
+}
+
+
+.MobM2{
+  height: 14%;
+  transition: 1s;
+  position: relative;
+  background-color: white;
+  z-index: 1;
+  display: flex;
+}
+.MobM2 > div > a{
+  transition: 1s;
+  display: none;
+  position: relative;
+}
+.MobM2_act{
+  position: relative;
+  z-index: 1;
+  height: 52%;
+  background-color: white;
+  transition: 1s;
+  display: block;
+}
+.MobM2_act > p{
+  margin: 0px;
+}
+.MobM2_act > img {
+  transition: 1s;
+  transform: rotate(180deg);
+}
+.MobM2_act > div > a{
+  transition: 1s;
+  display: block;
+  position: relative;
+  z-index: 0;
+}
+
+.MobM3{
+  height: 15%;
+  background-color: white;
+  position: relative;
+  background-color: white;
+  z-index: 1;
+  display: flex;
+  transition: 1s;
+}
+.MobM3 > div{
+  height: 0px;
+  transition: 1s;
+  display: none;
+  position: relative;
+  z-index: 0;
+}
+.MobM3_act{
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  height: 70%;
+  background-color: white;
+  transition: 1s;
+  display: block;
+}
+.MobM3_act > div {
+  transition: 1s;
+  display: block;
+}
+.MobM3_act > img {
+  transition: 1s;
+  transform: rotate(180deg);
+}
+
+.BGDiv{
+  display: none;
+  background: white;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 40px;
+
+}
+
+.BGDownDiv{
+  height: 50%;
+  padding-left: 5px;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+@media(max-width: 992px) {
+  .LSTDiv{
+    width: 100%;
+  }
+  .B2Div > p{
+    right: 5.9%;
+  }
+  .BodyStyle1{
+    width: 100%;
+  }
+  .B2Div{
+    width: 100%;
+  }
+  .form1{
+    visibility: hidden;
+    position: absolute;
+  }
+  .butt{
+    visibility: hidden;
+    position: absolute;
+  }
+  .gamb{
+    visibility: visible;
+    position: static;
+    margin-bottom: 5px;
+    float: right;
+    
+  }
+  .korz{
+    visibility: hidden;
+    position: absolute;
+  }
+  .telef{
+    visibility: hidden;
+    position: absolute;
+  }
+  .Head{
+    width: 90%;
+  }
+}
+@media(max-width: 819px) {
+  .BGDiv{
+    display: block;
+  }
+  .LSTDiv{
+    display: none;
+  }
+  .LastBodyMobile{
+    display: block;
+  }
+}
+@media (max-width: 526px){
+  .B2Div > button{
+    right: 3%;
+    transform:scale(0.8);
+    top: 800px;
+  }
+  .B2Div > button:hover{
+    transform: scale(1.1);
+  }
+  .B2Div > p{
+    top: 835px;
+    width:90%;
+  }
+  .HorseJpg_active{
+    height: 280px;
+  }
+  .Card1{
+    width: 90%;
+  }
+  .strela{
+    left: 78%;
+  }
+  .strelaReverse{
+    left: 78%;
+  }
+  /* .BGDownDiv{
+    height:230px
+  } */
+}
+@media (max-width: 356px){
+  .gamb{
+    position: absolute;
+    right: 1%;
+  }
+  .MobM0_act{
+    height: 75%;
+  }
+}
+@media (max-width: 280px){
+  .BGDownDiv{
+    height: 65%;
+  }
+}
